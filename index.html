@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayWorld Global - Next-Gen Fintech</title>
+    <title>PayWorld Global - Universal Fintech Gateway</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js -->
@@ -15,163 +15,199 @@
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     <style>
         body {
-            background-color: #0b0f19;
+            background-color: #07090e;
             color: #f3f4f6;
             font-family: system-ui, -apple-system, sans-serif;
         }
         .glass-card {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.08);
         }
         .glow-btn {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
         }
     </style>
 </head>
 <body class="p-4 md:p-8 min-h-screen">
 
     <!-- Navbar -->
-    <nav class="glass-card rounded-2xl p-4 mb-6 flex justify-between items-center max-w-7xl mx-auto">
+    <nav class="glass-card rounded-2xl p-4 mb-6 flex justify-between items-center max-w-7xl mx-auto shadow-2xl">
         <div class="flex items-center gap-3">
             <div class="w-10 h-10 bg-blue-600 rounded-xl flex items-center justify-center font-bold text-xl glow-btn">
-                <i class="fa-solid me-1 fa-bolt text-yellow-400"></i>P
+                <i class="fa-solid fa-bolt text-yellow-400"></i>
             </div>
-            <span class="font-bold text-xl tracking-wider text-white">PayWorld <span class="text-blue-500 text-sm">GLOBAL</span></span>
+            <div>
+                <span class="font-bold text-lg tracking-wider text-white">PayWorld <span class="text-blue-500 text-xs">GLOBAL</span></span>
+                <p class="text-[10px] text-gray-400">Borderlifeless Financial Ecosystem</p>
+            </div>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-3">
             <span class="bg-green-500/10 text-green-400 border border-green-500/20 text-xs px-3 py-1.5 rounded-full flex items-center gap-2">
-                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> AES-256 Enabled
+                <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Multi-Gateway Active
             </span>
-            <button class="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-xl transition glow-btn">
-                Profile
-            </button>
         </div>
     </nav>
 
     <!-- Main Dashboard Grid -->
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-        <!-- Balance Overview Cards -->
-        <div class="md:col-span-2 space-y-6">
+        <!-- Left 2 Columns: Multi-Currency & Global Gateways -->
+        <div class="lg:col-span-2 space-y-6">
             
-            <!-- Cards Row -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <!-- Multi-Currency Wallets Overview -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="glass-card rounded-2xl p-5 border-l-4 border-l-blue-500">
-                    <div class="flex justify-between items-center text-gray-400 text-sm mb-2">
-                        <span>Global Wallet (USD)</span>
-                        <i class="fa-solid fa-globe text-blue-400"></i>
+                    <div class="flex justify-between items-center text-gray-400 text-xs mb-2">
+                        <span>USD Global Wallet</span>
+                        <i class="fa-solid fa-dollar-sign text-blue-400"></i>
                     </div>
-                    <div class="text-3xl font-extrabold text-white">$12,450.00</div>
-                    <div class="text-xs text-green-400 mt-2 flex items-center gap-1">
-                        <i class="fa-solid fa-arrow-trend-up"></i> +$2,310 this month (Fiverr & Upwork)
-                    </div>
+                    <div class="text-2xl font-extrabold text-white">$14,850.00</div>
+                    <div class="text-[11px] text-green-400 mt-1">Freelance / Upwork / Fiverr</div>
                 </div>
 
                 <div class="glass-card rounded-2xl p-5 border-l-4 border-l-pink-500">
-                    <div class="flex justify-between items-center text-gray-400 text-sm mb-2">
-                        <span>Local BDT Balance</span>
+                    <div class="flex justify-between items-center text-gray-400 text-xs mb-2">
+                        <span>BDT Local (Incentive)</span>
                         <i class="fa-solid fa-bangladeshi-taka-sign text-pink-400"></i>
                     </div>
-                    <div class="text-3xl font-extrabold text-white">৳ 1,48,250.00</div>
-                    <div class="text-xs text-gray-400 mt-2">
-                        2.5% Gov. Incentive Auto-Applied
+                    <div class="text-2xl font-extrabold text-white">৳ 2,14,500</div>
+                    <div class="text-[11px] text-gray-400 mt-1">bKash / Nagad / BRAC Bank</div>
+                </div>
+
+                <div class="glass-card rounded-2xl p-5 border-l-4 border-l-yellow-500">
+                    <div class="flex justify-between items-center text-gray-400 text-xs mb-2">
+                        <span>Expat Remittance (SAR/AED)</span>
+                        <i class="fa-solid fa-earth-asia text-yellow-400"></i>
+                    </div>
+                    <div class="text-2xl font-extrabold text-white">18,400 SAR</div>
+                    <div class="text-[11px] text-gray-400 mt-1">Middle East Direct Link</div>
+                </div>
+            </div>
+
+            <!-- Global & Local Payment Gateway Connections -->
+            <div class="glass-card rounded-2xl p-6">
+                <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-network-wired text-blue-400"></i> Connected Local & Global Gateways
+                </h2>
+                <p class="text-xs text-gray-400 mb-4">Bangladesh-এর বিকাশ/নগদ থেকে শুরু করে আন্তর্জাতিক শীর্ষ গেটওয়েগুলোর সাথে রিয়েল-টাইম সিঙ্ক।</p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
+                        <i class="fa-solid fa-mobile-screen text-pink-500 text-lg"></i>
+                        <span class="font-medium text-white">bKash / Nagad</span>
+                        <span class="text-[10px] text-green-400">BD Local Active</span>
+                    </div>
+                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
+                        <i class="fa-solid fa-building-columns text-blue-400 text-lg"></i>
+                        <span class="font-medium text-white">BRAC Bank / NPSB</span>
+                        <span class="text-[10px] text-green-400">Direct Banking</span>
+                    </div>
+                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
+                        <i class="fa-brands fa-stripe text-purple-400 text-lg"></i>
+                        <span class="font-medium text-white">Stripe / Rapyd</span>
+                        <span class="text-[10px] text-green-400">Global Gateway</span>
+                    </div>
+                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
+                        <i class="fa-solid fa-globe text-yellow-400 text-lg"></i>
+                        <span class="font-medium text-white">Global Local Gateways</span>
+                        <span class="text-[10px] text-green-400">Multi-Region</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Freelance & Remittance Hub -->
+            <!-- Transfer & Global Payout Options (Freelancer, Expat, Remote Employee) -->
             <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-link text-blue-400"></i> Instant Connect Hub
+                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-paper-plane text-green-400"></i> Universal Payout & Transfer Hub
                 </h2>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
-                    <button class="bg-gray-800/80 hover:bg-gray-700/80 p-3 rounded-xl flex flex-col items-center justify-center gap-2 border border-gray-700 text-sm">
-                        <i class="fa-solid fa-briefcase text-green-400 text-xl"></i> Upwork
-                    </button>
-                    <button class="bg-gray-800/80 hover:bg-gray-700/80 p-3 rounded-xl flex flex-col items-center justify-center gap-2 border border-gray-700 text-sm">
-                        <i class="fa-solid fa-code text-green-500 text-xl"></i> Fiverr
-                    </button>
-                    <button class="bg-gray-800/80 hover:bg-gray-700/80 p-3 rounded-xl flex flex-col items-center justify-center gap-2 border border-gray-700 text-sm">
-                        <i class="fa-solid fa-paper-plane text-blue-400 text-xl"></i> Deel
-                    </button>
-                    <button class="bg-gray-800/80 hover:bg-gray-700/80 p-3 rounded-xl flex flex-col items-center justify-center gap-2 border border-gray-700 text-sm">
-                        <i class="fa-solid fa-users text-purple-400 text-xl"></i> Expat Hub
-                    </button>
-                </div>
-            </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
+                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-user-tie text-blue-400"></i> ফ্রিল্যান্সার / মার্কেটার</div>
+                        <p class="text-xs text-gray-400 mb-3">Upwork বা Fiverr থেকে ডলার এনে যেকোনো ব্যাংকে বা লোকাল ওয়ালেটে তাৎক্ষণিক ক্যাশআউট।</p>
+                        <button class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 py-2 rounded-lg text-xs font-semibold transition">Convert & Withdraw</button>
+                    </div>
 
-            <!-- Transaction Chart -->
-            <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-lg font-bold text-white mb-4">Inflow Analytics (Remittance & Freelance)</h2>
-                <div class="h-64">
-                    <canvas id="remittanceChart"></canvas>
+                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
+                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-people-roof text-yellow-400"></i> প্রবাসীদের রেমিট্যান্স</div>
+                        <p class="text-xs text-gray-400 mb-3">প্রবাসীরা বিদেশ থেকে সরাসরি দেশের পরিবার বা অ্যাকাউন্টে ২.৫% ইনসেন্টিভসহ টাকা পাঠান।</p>
+                        <button class="w-full bg-yellow-600/20 hover:bg-yellow-600 text-yellow-400 hover:text-white border border-yellow-500/30 py-2 rounded-lg text-xs font-semibold transition">Send Remittance</button>
+                    </div>
+
+                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
+                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-briefcase text-pink-400"></i> রিমোট কর্মচারী পেমেন্ট</div>
+                        <p class="text-xs text-gray-400 mb-3">বাইরের দেশের বা দেশীয় রিমোট এমপ্লয়ি ও এজেন্সি স্টাফদের একসাথে বাল্ক স্যালারি পেআউট।</p>
+                        <button class="w-full bg-pink-600/20 hover:bg-pink-600 text-pink-400 hover:text-white border border-pink-500/30 py-2 rounded-lg text-xs font-semibold transition">Pay Employees</button>
+                    </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- Sidebar / Remittance Calculator (Python Powered) -->
+        <!-- Right Column: Python Powered Multi-Currency & Remittance Engine -->
         <div class="space-y-6">
             
             <div class="glass-card rounded-2xl p-6 border border-blue-500/30">
-                <h2 class="text-lg font-bold text-white mb-2 flex items-center gap-2">
-                    <i class="fa-brands fa-python text-yellow-400"></i> Instant Calculator
+                <h2 class="text-base font-bold text-white mb-1 flex items-center gap-2">
+                    <i class="fa-brands fa-python text-yellow-400"></i> Multi-Currency Engine
                 </h2>
-                <p class="text-xs text-gray-400 mb-4">PyScript engine calculating live rates + 2.5% Incentive</p>
+                <p class="text-xs text-gray-400 mb-4">সরাসরি কারেন্সি কনভার্ট ও ২.৫% প্রণোদনা হিসাব করুন</p>
 
-                <div class="space-y-4">
+                <div class="space-y-3 text-xs">
                     <div>
-                        <label class="text-xs text-gray-300 block mb-1">Amount (USD)</label>
-                        <input id="usdInput" type="number" value="500" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-4 py-2.5 text-white focus:outline-none focus:border-blue-500 text-sm">
+                        <label class="text-gray-300 block mb-1">Select Currency / Source</label>
+                        <select id="currencySelect" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-blue-500">
+                            <option value="120">USD (US Dollar) - Rate: 120 BDT</option>
+                            <option value="32">SAR (Saudi Riyal) - Rate: 32 BDT</option>
+                            <option value="33">AED (UAE Dirham) - Rate: 33 BDT</option>
+                            <option value="150">EUR (Euro) - Rate: 150 BDT</option>
+                            <option value="175">GBP (British Pound) - Rate: 175 BDT</option>
+                        </select>
                     </div>
 
-                    <button id="calcBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-xl transition text-sm glow-btn">
-                        Calculate BDT Value
+                    <div>
+                        <label class="text-gray-300 block mb-1">Enter Amount</label>
+                        <input id="amountInput" type="number" value="500" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-blue-500 text-sm">
+                    </div>
+
+                    <button id="convertBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-xl transition glow-btn">
+                        Convert & Calculate
                     </button>
 
-                    <div id="resultBox" class="p-4 bg-gray-900/90 rounded-xl border border-gray-800 text-sm space-y-2">
+                    <div id="conversionResult" class="p-4 bg-gray-900/90 rounded-xl border border-gray-800 space-y-2 mt-2">
                         <div class="flex justify-between text-gray-400">
-                            <span>Base (1 USD = 120 BDT):</span>
+                            <span>Converted Base BDT:</span>
                             <span id="baseBdt" class="text-white font-semibold">৳ 0</span>
                         </div>
                         <div class="flex justify-between text-gray-400">
-                            <span>Gov 2.5% Incentive:</span>
+                            <span>Govt 2.5% Incentive:</span>
                             <span id="incentiveBdt" class="text-green-400 font-semibold">+ ৳ 0</span>
                         </div>
                         <hr class="border-gray-800">
-                        <div class="flex justify-between text-white font-bold text-base">
-                            <span>Total Payable:</span>
+                        <div class="flex justify-between text-white font-bold text-sm">
+                            <span>Total BDT Payable:</span>
                             <span id="totalBdt" class="text-blue-400">৳ 0</span>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Quick Cashout Methods -->
+            <!-- Global Destination Gateway Options -->
             <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-lg font-bold text-white mb-3">Withdraw To</h2>
-                <div class="space-y-3">
+                <h2 class="text-base font-bold text-white mb-3">Transfer to Any Gateway / Bank</h2>
+                <div class="space-y-2.5 text-xs">
                     <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-lg bg-pink-600 flex items-center justify-center font-bold text-xs text-white">bK</div>
-                            <span class="text-sm font-medium">bKash Merchant</span>
-                        </div>
-                        <span class="text-xs text-green-400">Instant</span>
+                        <span class="font-medium text-white">Local Banks (EBL, DBBL, BRAC)</span>
+                        <span class="text-green-400">NPSB / BEFTN</span>
                     </div>
                     <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-lg bg-orange-600 flex items-center justify-center font-bold text-xs text-white">NG</div>
-                            <span class="text-sm font-medium">Nagad API</span>
-                        </div>
-                        <span class="text-xs text-green-400">Instant</span>
+                        <span class="font-medium text-white">Mobile Wallets (bKash, Nagad)</span>
+                        <span class="text-green-400">Instant</span>
                     </div>
                     <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <div class="flex items-center gap-3">
-                            <div class="w-8 h-8 rounded-lg bg-blue-700 flex items-center justify-center font-bold text-xs text-white">BR</div>
-                            <span class="text-sm font-medium">BRAC Bank NPSB</span>
-                        </div>
-                        <span class="text-xs text-green-400">24/7 Realtime</span>
+                        <span class="font-medium text-white">Global Bank Accounts (IBAN/SWIFT)</span>
+                        <span class="text-blue-400">Worldwide</span>
                     </div>
                 </div>
             </div>
@@ -182,42 +218,21 @@
 
     <!-- Python Code Embedded via PyScript -->
     <script type="py">
-from pyscript import Element
-
-def calculate_remittance(event=None):
-    usd = float(Element("usdInput").element.value or 0)
-    rate = 120.0
-    base_bdt = usd * rate
-    incentive = base_bdt * 0.025
-    total = base_bdt + incentive
-
-    Element("baseBdt").element.innerText = f"৳ {base_bdt:,.2f}"
-    Element("incentiveBdt").element.innerText = f"+ ৳ {incentive:,.2f}"
-    Element("totalBdt").element.innerText = f"৳ {total:,.2f}"
-
-# Initial Run
-calculate_remittance()
-
-# Event Listener
-Element("calcBtn").element.onclick = calculate_remittance
-    </script>
-
-    <!-- Chart.js Script -->
-    <script>
-        <!-- Python Code Embedded via PyScript -->
-    <script type="py">
 import js
 from pyscript import document
 
-def calculate_remittance(event=None):
+def calculate_currency(event=None):
     try:
-        usd_val = document.querySelector("#usdInput").value
-        usd = float(usd_val) if usd_val else 0.0
-    except:
-        usd = 0.0
+        amt_val = document.querySelector("#amountInput").value
+        amount = float(amt_val) if amt_val else 0.0
         
-    rate = 120.0
-    base_bdt = usd * rate
+        rate_val = document.querySelector("#currencySelect").value
+        rate = float(rate_val) if rate_val else 120.0
+    except:
+        amount = 0.0
+        rate = 120.0
+        
+    base_bdt = amount * rate
     incentive = base_bdt * 0.025
     total = base_bdt + incentive
 
@@ -226,16 +241,19 @@ def calculate_remittance(event=None):
     document.querySelector("#totalBdt").innerText = f"৳ {total:,.2f}"
 
 # Initial Run
-calculate_remittance()
+calculate_currency()
 
-# Event Listener binding using JS
-def setup_listener():
-    btn = document.querySelector("#calcBtn")
+# Event Listeners binding
+def setup_listeners():
+    btn = document.querySelector("#convertBtn")
     if btn:
-        btn.onclick = calculate_remittance
+        btn.onclick = calculate_currency
+    
+    sel = document.querySelector("#currencySelect")
+    if sel:
+        sel.onchange = calculate_currency
 
-setup_listener()
-    </script>
+setup_listeners()
     </script>
 
 </body>
