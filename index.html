@@ -55,7 +55,7 @@
         <!-- Left 2 Columns -->
         <div class="lg:col-span-2 space-y-6">
             
-            <!-- FEATURE: Country Code & Mobile Number Registration/Verification Widget -->
+            <!-- Global Account Registration & Phone Link -->
             <div class="glass-card rounded-2xl p-6 border-l-4 border-l-blue-500">
                 <h2 class="text-base font-bold text-white mb-2 flex items-center gap-2">
                     <i class="fa-solid fa-globe text-blue-400"></i> Global Account Registration & Phone Link
@@ -117,6 +117,72 @@
                 </div>
             </div>
 
+            <!-- NEW FEATURE 1: QR Code Scan & Instant Send Money -->
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-l-green-500">
+                <div class="flex justify-between items-center mb-3">
+                    <h2 class="text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-qrcode text-green-400"></i> QR Pay & Instant Transfer Hub
+                    </h2>
+                    <span class="text-xs text-green-400 bg-green-500/10 px-2.5 py-1 rounded-full">P2P & Merchant Ready</span>
+                </div>
+                <p class="text-xs text-gray-400 mb-4">কিউআর কোড স্ক্যান করে বা সরাসরি ইউজার আইডিতে мгновенно (instant) টাকা পাঠান।</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                    <div class="p-3 bg-gray-900/60 rounded-xl border border-gray-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-white font-semibold block">Scan Merchant QR</span>
+                            <span class="text-gray-400 text-[10px]">Global & Local Outlets</span>
+                        </div>
+                        <button class="bg-green-600 hover:bg-green-700 text-white px-3 py-1.5 rounded-lg font-medium transition">Open Scanner</button>
+                    </div>
+                    <div class="p-3 bg-gray-900/60 rounded-xl border border-gray-800 flex items-center justify-between">
+                        <div>
+                            <span class="text-white font-semibold block">P2P Fast Transfer</span>
+                            <span class="text-gray-400 text-[10px]">Zero Fee Worldwide</span>
+                        </div>
+                        <button class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg font-medium transition">Send Money</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NEW FEATURE 2: Real-time Transaction Ledger / History -->
+            <div class="glass-card rounded-2xl p-6">
+                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">
+                    <i class="fa-solid fa-clock-rotate-left text-blue-400"></i> Recent Transaction Ledger
+                </h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs text-gray-300">
+                        <thead class="border-b border-gray-800 text-gray-400 uppercase">
+                            <tr>
+                                <th class="pb-2">Gateway / Source</th>
+                                <th class="pb-2">Type</th>
+                                <th class="pb-2">Amount</th>
+                                <th class="pb-2">Status</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-800/50">
+                            <tr>
+                                <td class="py-3 font-medium text-white">Upwork Escrow</td>
+                                <td class="py-3 text-blue-400">USD Inflow</td>
+                                <td class="py-3">+$1,250.00</td>
+                                <td class="py-3"><span class="bg-green-500/10 text-green-400 px-2 py-0.5 rounded text-[10px]">Success</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-medium text-white">bKash Merchant</td>
+                                <td class="py-3 text-pink-400">BDT Cashout</td>
+                                <td class="py-3">৳ 45,000</td>
+                                <td class="py-3"><span class="bg-green-500/10 text-green-400 px-2 py-0.5 rounded text-[10px]">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 font-medium text-white">Saudi STC Pay</td>
+                                <td class="py-3 text-yellow-400">Remittance</td>
+                                <td class="py-3">2,500 SAR</td>
+                                <td class="py-3"><span class="bg-green-500/10 text-green-400 px-2 py-0.5 rounded text-[10px]">Verified (+2.5%)</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
             <!-- Virtual Card Generator -->
             <div class="glass-card rounded-2xl p-6 border-l-4 border-l-purple-500">
                 <div class="flex justify-between items-center mb-4">
@@ -150,31 +216,40 @@
 
         </div>
 
-        <!-- Right Column: Python Multi-Currency Engine & Security -->
+        <!-- Right Column: Python Exchange Engine, AI Risk & Analytics -->
         <div class="space-y-6">
             
-            <!-- AI Security Shield Status Panel -->
+            <!-- NEW FEATURE 3: AI Fraud Risk Score & KYC Security Panel -->
             <div class="glass-card rounded-2xl p-5 border border-green-500/30">
                 <h2 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-shield-virus text-green-400"></i> Nexus Security & AI Shield
+                    <i class="fa-solid fa-shield-virus text-green-400"></i> AI Risk Score & Security Shield
                 </h2>
-                <div class="space-y-2 text-xs">
-                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
-                        <span class="text-gray-300">Behavioral Biometrics</span>
-                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
+                <div class="space-y-3 text-xs">
+                    <div class="p-3 bg-gray-900/80 rounded-xl border border-gray-800 flex justify-between items-center">
+                        <div>
+                            <span class="text-gray-300 block">Fraud Risk Level</span>
+                            <span class="text-green-400 font-bold">LOW (Secure)</span>
+                        </div>
+                        <div class="w-10 h-10 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center font-bold">99%</div>
                     </div>
-                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
-                        <span class="text-gray-300">Deepfake Detection Engine</span>
-                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
-                    </div>
-                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
-                        <span class="text-gray-300">mTLS Microservice Tunnel</span>
-                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-lock"></i> Encrypted</span>
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                            <span class="text-gray-300">Behavioral Biometrics</span>
+                            <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
+                        </div>
+                        <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                            <span class="text-gray-300">Deepfake Detection Engine</span>
+                            <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
+                        </div>
+                        <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                            <span class="text-gray-300">mTLS Microservice Tunnel</span>
+                            <span class="text-green-400 font-semibold"><i class="fa-solid fa-lock"></i> Encrypted</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Python Multi-Currency Engine -->
+            <!-- Python Multi-Currency Exchange Engine -->
             <div class="glass-card rounded-2xl p-6 border border-blue-500/30">
                 <h2 class="text-base font-bold text-white mb-1 flex items-center gap-2">
                     <i class="fa-brands fa-python text-yellow-400"></i> Nexus Exchange Engine
@@ -220,6 +295,15 @@
                 </div>
             </div>
 
+            <!-- NEW FEATURE 4: Spending Analytics Chart -->
+            <div class="glass-card rounded-2xl p-6">
+                <h2 class="text-base font-bold text-white mb-3">Spending & Inflow Analytics</h2>
+                <p class="text-xs text-gray-400 mb-4">মাসিক রেমিট্যান্স ও ফ্রিল্যান্স আয় গ্রাফ</p>
+                <div class="h-48">
+                    <canvas id="analyticsChart"></canvas>
+                </div>
+            </div>
+
         </div>
 
     </div>
@@ -262,6 +346,36 @@ def setup_listeners():
         sel.onchange = calculate_currency
 
 setup_listeners()
+    </script>
+
+    <!-- Chart.js Script for Analytics -->
+    <script>
+        const ctx = document.getElementById('analyticsChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                datasets: [{
+                    label: 'Inflow ($ USD)',
+                    data: [3200, 4800, 6100, 8500, 11200, 14850],
+                    borderColor: '#3b82f6',
+                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { labels: { color: '#9ca3af', font: { size: 10 } } }
+                },
+                scales: {
+                    x: { ticks: { color: '#9ca3af', font: { size: 10 } }, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
+                    y: { ticks: { color: '#9ca3af', font: { size: 10 } }, grid: { color: 'rgba(255, 255, 255, 0.05)' } }
+                }
+            }
+        });
     </script>
 
 </body>
