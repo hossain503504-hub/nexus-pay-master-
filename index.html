@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus-Pay Master - Universal Fintech Gateway</title>
+    <title>Nexus Pay Master - Next-Gen Global Fintech Gateway</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Chart.js -->
@@ -38,8 +38,8 @@
                 <i class="fa-solid fa-bolt text-yellow-400"></i>
             </div>
             <div>
-                <span class="font-bold text-lg tracking-wider text-white">PayWorld <span class="text-blue-500 text-xs">GLOBAL</span></span>
-                <p class="text-[10px] text-gray-400">Borderlifeless Financial Ecosystem</p>
+                <span class="font-bold text-lg tracking-wider text-white">Nexus Pay <span class="text-blue-500 text-xs">MASTER</span></span>
+                <p class="text-[10px] text-gray-400">Global Universal Remittance & Gateway</p>
             </div>
         </div>
         <div class="flex items-center gap-3">
@@ -52,9 +52,41 @@
     <!-- Main Dashboard Grid -->
     <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
 
-        <!-- Left 2 Columns: Multi-Currency & Global Gateways -->
+        <!-- Left 2 Columns -->
         <div class="lg:col-span-2 space-y-6">
             
+            <!-- FEATURE: Country Code & Mobile Number Registration/Verification Widget -->
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-l-blue-500">
+                <h2 class="text-base font-bold text-white mb-2 flex items-center gap-2">
+                    <i class="fa-solid fa-globe text-blue-400"></i> Global Account Registration & Phone Link
+                </h2>
+                <p class="text-xs text-gray-400 mb-4">যেকোনো দেশ থেকে একাউন্ট খোলার সময় আপনার স্থানীয় কান্ট্রি কোড সহ মোবাইল নাম্বার যোগ করুন।</p>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                    <div>
+                        <label class="text-gray-300 block mb-1">Select Country Code</label>
+                        <select id="countryPhoneCode" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-blue-500">
+                            <option value="+880">🇧🇩 Bangladesh (+880 BDT)</option>
+                            <option value="+966">🇸🇦 Saudi Arabia (+966 SAR)</option>
+                            <option value="+971">🇦🇪 UAE (+971 AED)</option>
+                            <option value="+1">🇺🇸 USA (+1 USD)</option>
+                            <option value="+60">🇲🇾 Malaysia (+60 MYR)</option>
+                            <option value="+44">🇬🇧 UK (+44 GBP)</option>
+                            <option value="+974">🇶🇦 Qatar (+974 QAR)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-gray-300 block mb-1">Mobile Number</label>
+                        <input type="tel" placeholder="1700000000" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2 text-white focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="flex items-end">
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 rounded-xl transition glow-btn">
+                            Send Verification OTP
+                        </button>
+                    </div>
+                </div>
+            </div>
+
             <!-- Multi-Currency Wallets Overview -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 <div class="glass-card rounded-2xl p-5 border-l-4 border-l-blue-500">
@@ -85,74 +117,69 @@
                 </div>
             </div>
 
-            <!-- Global & Local Payment Gateway Connections -->
-            <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-base font-bold text-white mb-3 flex items-center gap-2">
-                    <i class="fa-solid fa-network-wired text-blue-400"></i> Connected Local & Global Gateways
-                </h2>
-                <p class="text-xs text-gray-400 mb-4">Bangladesh-এর বিকাশ/নগদ থেকে শুরু করে আন্তর্জাতিক শীর্ষ গেটওয়েগুলোর সাথে রিয়েল-টাইম সিঙ্ক।</p>
-                
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
-                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
-                        <i class="fa-solid fa-mobile-screen text-pink-500 text-lg"></i>
-                        <span class="font-medium text-white">bKash / Nagad</span>
-                        <span class="text-[10px] text-green-400">BD Local Active</span>
-                    </div>
-                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
-                        <i class="fa-solid fa-building-columns text-blue-400 text-lg"></i>
-                        <span class="font-medium text-white">BRAC Bank / NPSB</span>
-                        <span class="text-[10px] text-green-400">Direct Banking</span>
-                    </div>
-                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
-                        <i class="fa-brands fa-stripe text-purple-400 text-lg"></i>
-                        <span class="font-medium text-white">Stripe / Rapyd</span>
-                        <span class="text-[10px] text-green-400">Global Gateway</span>
-                    </div>
-                    <div class="p-3 bg-gray-800/60 rounded-xl border border-gray-700 flex flex-col items-center text-center gap-2">
-                        <i class="fa-solid fa-globe text-yellow-400 text-lg"></i>
-                        <span class="font-medium text-white">Global Local Gateways</span>
-                        <span class="text-[10px] text-green-400">Multi-Region</span>
-                    </div>
+            <!-- Virtual Card Generator -->
+            <div class="glass-card rounded-2xl p-6 border-l-4 border-l-purple-500">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-base font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-credit-card text-purple-400"></i> Nexus Pay Master Virtual Debit Card
+                    </h2>
+                    <button class="bg-purple-600 hover:bg-purple-700 text-white text-xs px-3 py-2 rounded-xl transition glow-btn">
+                        + Generate New Card
+                    </button>
                 </div>
-            </div>
-
-            <!-- Transfer & Global Payout Options (Freelancer, Expat, Remote Employee) -->
-            <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-base font-bold text-white mb-4 flex items-center gap-2">
-                    <i class="fa-solid fa-paper-plane text-green-400"></i> Universal Payout & Transfer Hub
-                </h2>
-                
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
-                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-user-tie text-blue-400"></i> ফ্রিল্যান্সার / মার্কেটার</div>
-                        <p class="text-xs text-gray-400 mb-3">Upwork বা Fiverr থেকে ডলার এনে যেকোনো ব্যাংকে বা লোকাল ওয়ালেটে তাৎক্ষণিক ক্যাশআউট।</p>
-                        <button class="w-full bg-blue-600/20 hover:bg-blue-600 text-blue-400 hover:text-white border border-blue-500/30 py-2 rounded-lg text-xs font-semibold transition">Convert & Withdraw</button>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-4 rounded-xl bg-gradient-to-r from-purple-900/80 to-blue-900/80 border border-purple-500/30 text-white space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-semibold text-purple-200">Nexus Pay Platinum Card</span>
+                            <i class="fa-brands fa-cc-visa text-xl text-white"></i>
+                        </div>
+                        <div class="font-mono text-sm tracking-widest text-center py-2">4532 •••• •••• 8892</div>
+                        <div class="flex justify-between text-[10px] text-gray-300">
+                            <span>EXP: 08/29</span>
+                            <span>CVC: •••</span>
+                            <span>LIMIT: $500/Mo</span>
+                        </div>
                     </div>
-
-                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
-                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-people-roof text-yellow-400"></i> প্রবাসীদের রেমিট্যান্স</div>
-                        <p class="text-xs text-gray-400 mb-3">প্রবাসীরা বিদেশ থেকে সরাসরি দেশের পরিবার বা অ্যাকাউন্টে ২.৫% ইনসেন্টিভসহ টাকা পাঠান।</p>
-                        <button class="w-full bg-yellow-600/20 hover:bg-yellow-600 text-yellow-400 hover:text-white border border-yellow-500/30 py-2 rounded-lg text-xs font-semibold transition">Send Remittance</button>
-                    </div>
-
-                    <div class="p-4 bg-gray-900/60 rounded-xl border border-gray-800">
-                        <div class="font-bold text-white mb-1"><i class="fa-solid fa-briefcase text-pink-400"></i> রিমোট কর্মচারী পেমেন্ট</div>
-                        <p class="text-xs text-gray-400 mb-3">বাইরের দেশের বা দেশীয় রিমোট এমপ্লয়ি ও এজেন্সি স্টাফদের একসাথে বাল্ক স্যালারি পেআউট।</p>
-                        <button class="w-full bg-pink-600/20 hover:bg-pink-600 text-pink-400 hover:text-white border border-pink-500/30 py-2 rounded-lg text-xs font-semibold transition">Pay Employees</button>
+                    <div class="flex flex-col justify-center text-xs text-gray-300 space-y-2">
+                        <p><i class="fa-solid fa-circle-check text-green-400 mr-1"></i> ফেসবুক, গুগল ও শপিফাই এডে সহজে পেমেন্ট করুন।</p>
+                        <p><i class="fa-solid fa-circle-check text-green-400 mr-1"></i> যেকোনো আন্তর্জাতিক সফটওয়্যার সাবস্ক্রিপশন ফি কভার।</p>
+                        <p><i class="fa-solid fa-shield-halved text-blue-400 mr-1"></i> ইনস্ট্যান্ট লক/আনলক ও কাস্টম স্পেন্ডিং লিমিট।</p>
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <!-- Right Column: Python Powered Multi-Currency & Remittance Engine -->
+        <!-- Right Column: Python Multi-Currency Engine & Security -->
         <div class="space-y-6">
             
+            <!-- AI Security Shield Status Panel -->
+            <div class="glass-card rounded-2xl p-5 border border-green-500/30">
+                <h2 class="text-sm font-bold text-white mb-3 flex items-center gap-2">
+                    <i class="fa-solid fa-shield-virus text-green-400"></i> Nexus Security & AI Shield
+                </h2>
+                <div class="space-y-2 text-xs">
+                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                        <span class="text-gray-300">Behavioral Biometrics</span>
+                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                        <span class="text-gray-300">Deepfake Detection Engine</span>
+                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-check"></i> Active</span>
+                    </div>
+                    <div class="flex justify-between items-center p-2 bg-gray-900/60 rounded-lg">
+                        <span class="text-gray-300">mTLS Microservice Tunnel</span>
+                        <span class="text-green-400 font-semibold"><i class="fa-solid fa-lock"></i> Encrypted</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Python Multi-Currency Engine -->
             <div class="glass-card rounded-2xl p-6 border border-blue-500/30">
                 <h2 class="text-base font-bold text-white mb-1 flex items-center gap-2">
-                    <i class="fa-brands fa-python text-yellow-400"></i> Multi-Currency Engine
+                    <i class="fa-brands fa-python text-yellow-400"></i> Nexus Exchange Engine
                 </h2>
-                <p class="text-xs text-gray-400 mb-4">সরাসরি কারেন্সি কনভার্ট ও ২.৫% প্রণোদনা হিসাব করুন</p>
+                <p class="text-xs text-gray-400 mb-4">কারেন্সি কনভার্ট ও ২.৫% প্রণোদনা হিসাব করুন</p>
 
                 <div class="space-y-3 text-xs">
                     <div>
@@ -168,7 +195,7 @@
 
                     <div>
                         <label class="text-gray-300 block mb-1">Enter Amount</label>
-                        <input id="amountInput" type="number" value="500" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-blue-500 text-sm">
+                        <input id="amountInput" type="number" value="1000" class="w-full bg-gray-900 border border-gray-700 rounded-xl px-3 py-2.5 text-white focus:outline-none focus:border-blue-500 text-sm">
                     </div>
 
                     <button id="convertBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 rounded-xl transition glow-btn">
@@ -189,25 +216,6 @@
                             <span>Total BDT Payable:</span>
                             <span id="totalBdt" class="text-blue-400">৳ 0</span>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Global Destination Gateway Options -->
-            <div class="glass-card rounded-2xl p-6">
-                <h2 class="text-base font-bold text-white mb-3">Transfer to Any Gateway / Bank</h2>
-                <div class="space-y-2.5 text-xs">
-                    <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <span class="font-medium text-white">Local Banks (EBL, DBBL, BRAC)</span>
-                        <span class="text-green-400">NPSB / BEFTN</span>
-                    </div>
-                    <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <span class="font-medium text-white">Mobile Wallets (bKash, Nagad)</span>
-                        <span class="text-green-400">Instant</span>
-                    </div>
-                    <div class="flex justify-between items-center p-3 bg-gray-800/50 rounded-xl border border-gray-700">
-                        <span class="font-medium text-white">Global Bank Accounts (IBAN/SWIFT)</span>
-                        <span class="text-blue-400">Worldwide</span>
                     </div>
                 </div>
             </div>
