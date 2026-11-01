@@ -204,32 +204,38 @@ Element("calcBtn").element.onclick = calculate_remittance
 
     <!-- Chart.js Script -->
     <script>
-        const ctx = document.getElementById('remittanceChart').getContext('2d');
-        new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                datasets: [{
-                    label: 'Inflow ($ USD)',
-                    data: [1200, 1900, 3000, 2500, 4200, 5800],
-                    borderColor: '#3b82f6',
-                    backgroundColor: 'rgba(59, 130, 246, 0.1)',
-                    fill: true,
-                    tension: 0.4
-                }]
-            },
-            options: {
-                responsive: true,
-                maintainAspectRatio: false,
-                plugins: {
-                    legend: { labels: { color: '#9ca3af' } }
-                },
-                scales: {
-                    x: { ticks: { color: '#9ca3af' }, grid: { color: 'rgba(255, 255, 255, 0.05)' } },
-                    y: { ticks: { color: '#9ca3af' }, grid: { color: 'rgba(255, 255, 255, 0.05)' } }
-                }
-            }
-        });
+        <!-- Python Code Embedded via PyScript -->
+    <script type="py">
+import js
+from pyscript import document
+
+def calculate_remittance(event=None):
+    try:
+        usd_val = document.querySelector("#usdInput").value
+        usd = float(usd_val) if usd_val else 0.0
+    except:
+        usd = 0.0
+        
+    rate = 120.0
+    base_bdt = usd * rate
+    incentive = base_bdt * 0.025
+    total = base_bdt + incentive
+
+    document.querySelector("#baseBdt").innerText = f"৳ {base_bdt:,.2f}"
+    document.querySelector("#incentiveBdt").innerText = f"+ ৳ {incentive:,.2f}"
+    document.querySelector("#totalBdt").innerText = f"৳ {total:,.2f}"
+
+# Initial Run
+calculate_remittance()
+
+# Event Listener binding using JS
+def setup_listener():
+    btn = document.querySelector("#calcBtn")
+    if btn:
+        btn.onclick = calculate_remittance
+
+setup_listener()
+    </script>
     </script>
 
 </body>
